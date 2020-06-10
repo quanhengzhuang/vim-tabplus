@@ -11,12 +11,16 @@ endif
 let g:loaded_tabplus = 1
 
 " Maps
-map <silent> <leader>u :Tabreopen<CR>
-map <silent> <leader>U :Tabclosed<CR>
-map <silent> Q :Tabclose<CR>
+map <silent> <leader>h :tabprevious<CR>
+map <silent> <leader>l :tabnext<CR>
 
 map <silent> <leader>H :TabmovePrevious<CR>
 map <silent> <leader>L :TabmoveNext<CR>
+
+map <silent> <leader>u :Tabreopen<CR>
+map <silent> <leader>U :Tabclosed<CR>
+
+map <silent> Q :Tabclose<CR>
 
 " Commands
 command! Tabclosed :call ClosedTabView()
